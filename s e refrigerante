@@ -29,3 +29,5 @@ public class MaquinaVenda{
     }
 
 scanner.close();
+}
+}
