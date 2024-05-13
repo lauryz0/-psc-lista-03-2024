@@ -11,7 +11,7 @@ public class AtividadeCinco {
         System.out.println("Digite o símbolo desejado para a operação (+, - ,/ ou ^): ");
         char simbolo = scanner.next().charAt(0);
       
-        char subtração = '-';
+        char subtracão = '-';
         char soma = '+';
         char multiplicação = '*';
         char divisao = '/';
