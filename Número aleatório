@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println("Digite o primeiro número:");
+        int num1 = scanner.nextInt();
+
+        System.out.println("Digite o segundo número:");
+        int num2 = scanner.nextInt();
+
+        // Encontrar o menor e o maior número
+        int menor = Math.min(num1, num2);
+        int maior = Math.max(num1, num2);
+
+        // Criar um número aleatório entre o menor e o maior número
+        int numeroAleatorio = random.nextInt(maior - menor + 1) + menor;
+
+        //Analisando qual é o menor número 
+        if (numeroAleatorio % 2 == 0) {
+            System.out.println("O número gerado é " + numeroAleatorio + " e ele é par.");
+        } else {
+            System.out.println("O número gerado é " + numeroAleatorio + " e ele é ímpar.");
+        }
+    }
+}
